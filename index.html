@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Legends VBC - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .collegiate-style {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Custom blue and orange colors */
+        :root {
+            --rl-blue: #0A2342;
+            --rl-orange: #FF8C00;
+        }
+        .bg-rl-blue { background-color: var(--rl-blue); }
+        .text-rl-blue { color: var(--rl-blue); }
+        .bg-rl-orange { background-color: var(--rl-orange); }
+        .hover\:bg-rl-orange-dark:hover { background-color: #e67e00; }
+        .text-rl-orange { color: var(--rl-orange); }
+        .hover\:text-rl-orange:hover { color: var(--rl-orange); }
+        .border-rl-blue { border-color: var(--rl-blue); }
+
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <!-- Logo Placeholder -->
+                <img src="https://placehold.co/200x60/0A2342/FFFFFF?text=ROYAL+LEGENDS" alt="Royal Legends VBC Logo" class="h-12 md:h-14" onerror="this.onerror=null;this.src='https://placehold.co/200x60?text=Logo';">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-rl-blue font-semibold border-b-2 border-rl-blue">Home</a>
+                <a href="teams.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Teams</a>
+                <a href="tryouts.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Tryouts</a>
+                <a href="training.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Training</a>
+                <a href="contact.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Contact</a>
+            </div>
+            <a href="tryouts.html" class="hidden md:block bg-rl-orange text-white font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-rl-blue">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-rl-blue font-semibold">Home</a>
+            <a href="teams.html" class="block py-2 text-gray-600 hover:text-rl-blue">Teams</a>
+            <a href="tryouts.html" class="block py-2 text-gray-600 hover:text-rl-blue">Tryouts</a>
+            <a href="training.html" class="block py-2 text-gray-600 hover:text-rl-blue">Training</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-rl-blue">Contact</a>
+            <a href="tryouts.html" class="block mt-4 bg-rl-orange text-white text-center font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Slideshow Section -->
+        <section class="relative h-[500px] md:h-[650px] text-white overflow-hidden">
+            <!-- Slideshow Container -->
+            <div id="slideshow-container" class="absolute inset-0">
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/0A2342/FFFFFF?text=Volleyball+Serve');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/0A2342/FFFFFF?text=Team+Celebration');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/0A2342/FFFFFF?text=Defensive+Dig');"></div>
+            </div>
+             <!-- Hero Content -->
+            <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+                <h1 class="text-4xl md:text-7xl font-black collegiate-style drop-shadow-lg">FORGE YOUR LEGACY</h1>
+                <p class="mt-4 text-lg md:text-2xl max-w-3xl mx-auto drop-shadow-md">Pennsylvania's Premier Volleyball Club for Aspiring Collegiate Athletes.</p>
+                <div class="mt-8">
+                    <a href="tryouts.html" class="bg-rl-orange text-white font-bold py-4 px-10 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style text-lg">
+                        View Tryout Schedule
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black collegiate-style text-rl-blue mb-4">BUILT ON EXCELLENCE</h2>
+                        <p class="text-lg mb-4">Royal Legends VBC is dedicated to developing athletes to their highest potential. Our philosophy is grounded in discipline, teamwork, and a relentless pursuit of excellence. We provide a structured, competitive, and supportive environment where players don't just learn the game; they learn to lead.</p>
+                        <p class="text-lg">Our experienced coaching staff, with a history of collegiate and professional success, is committed to mentoring the next generation of volleyball stars. We focus on advanced techniques, strategic gameplay, and the physical conditioning necessary to compete at the elite level.</p>
+                        <a href="contact.html" class="mt-6 inline-block bg-rl-blue text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 collegiate-style">
+                            Learn More
+                        </a>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/0A2342/FFFFFF?text=Team+Huddle" alt="Team Huddle" class="rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-black collegiate-style text-rl-blue mb-2">OUR PROGRAMS</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Elite training for every age and skill level, designed to build champions.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Program Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-bold collegiate-style text-rl-blue mb-3">NATIONAL TEAMS</h3>
+                        <p class="mb-4">For the most dedicated athletes aiming to compete on the national stage and pursue collegiate careers. Intensive training and travel required.</p>
+                        <a href="teams.html" class="font-semibold text-rl-blue hover:text-rl-orange transition">View Details &rarr;</a>
+                    </div>
+                    <!-- Program Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-bold collegiate-style text-rl-blue mb-3">REGIONAL TEAMS</h3>
+                        <p class="mb-4">Competitive teams that compete in regional tournaments. A perfect balance of high-level play and manageable travel commitments.</p>
+                        <a href="teams.html" class="font-semibold text-rl-blue hover:text-rl-orange transition">View Details &rarr;</a>
+                    </div>
+                    <!-- Program Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-bold collegiate-style text-rl-blue mb-3">DEVELOPMENTAL CLINICS</h3>
+                        <p class="mb-4">Skill-focused clinics for beginners and intermediate players looking to improve fundamentals and prepare for club-level competition.</p>
+                        <a href="training.html" class="font-semibold text-rl-blue hover:text-rl-orange transition">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-rl-blue text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-black collegiate-style text-center mb-12">WHAT OUR FAMILIES SAY</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl">
+                        <p class="mb-4">"The coaching at Royal Legends is unmatched. My daughter's skills and confidence have grown exponentially since joining the club. The focus on discipline and fundamentals prepared her for a successful high school season."</p>
+                        <p class="font-bold collegiate-style">- JENNIFER S., PARENT</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl">
+                        <p class="mb-4">"As a former player, I can say this club truly prepares you for the next level. The training is intense, but the coaches are invested in your success both on and off the court. It's more than a team, it's a family."</p>
+                        <p class="font-bold collegiate-style">- MEGAN R., ALUMNI (D1 ATHLETE)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-black collegiate-style">ROYAL LEGENDS VBC</h3>
+                    <p class="mt-2 text-gray-400">Building the next generation of leaders through volleyball.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Quick Links</h4>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="teams.html" class="text-gray-300 hover:text-rl-orange">Teams</a></li>
+                        <li><a href="tryouts.html" class="text-gray-300 hover:text-rl-orange">Tryouts</a></li>
+                        <li><a href="training.html" class="text-gray-300 hover:text-rl-orange">Training</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rl-orange">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Follow Us</h4>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Royal Legends VBC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hero Slideshow
+        const slides = document.querySelectorAll('#slideshow-container .slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            if (slides.length > 1) {
+                slides[currentSlide].classList.remove('opacity-100');
+                slides[currentSlide].classList.add('opacity-0');
+
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                slides[currentSlide].classList.remove('opacity-0');
+                slides[currentSlide].classList.add('opacity-100');
+            }
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+
+</body>
+</html>
