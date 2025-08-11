@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Legends VBC - Teams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .collegiate-style {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Custom blue and orange colors */
+        :root {
+            --rl-blue: #0A2342;
+            --rl-orange: #FF8C00;
+        }
+        .bg-rl-blue { background-color: var(--rl-blue); }
+        .text-rl-blue { color: var(--rl-blue); }
+        .bg-rl-orange { background-color: var(--rl-orange); }
+        .hover\:bg-rl-orange-dark:hover { background-color: #e67e00; }
+        .text-rl-orange { color: var(--rl-orange); }
+        .hover\:text-rl-orange:hover { color: var(--rl-orange); }
+        .border-rl-blue { border-color: var(--rl-blue); }
+        .border-rl-orange { border-color: var(--rl-orange); }
+        .ring-rl-orange { ring-color: var(--rl-orange); }
+
+        /* Simple animation for content fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <!-- Logo Placeholder -->
+                <img src="https://placehold.co/200x60/0A2342/FFFFFF?text=ROYAL+LEGENDS" alt="Royal Legends VBC Logo" class="h-12 md:h-14" onerror="this.onerror=null;this.src='https://placehold.co/200x60?text=Logo';">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Home</a>
+                <a href="teams.html" class="text-rl-blue font-semibold border-b-2 border-rl-blue">Teams</a>
+                <a href="tryouts.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Tryouts</a>
+                <a href="training.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Training</a>
+                <a href="contact.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Contact</a>
+            </div>
+            <a href="tryouts.html" class="hidden md:block bg-rl-orange text-white font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-rl-blue">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-rl-blue">Home</a>
+            <a href="teams.html" class="block py-2 text-rl-blue font-semibold">Teams</a>
+            <a href="tryouts.html" class="block py-2 text-gray-600 hover:text-rl-blue">Tryouts</a>
+            <a href="training.html" class="block py-2 text-gray-600 hover:text-rl-blue">Training</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-rl-blue">Contact</a>
+            <a href="tryouts.html" class="block mt-4 bg-rl-orange text-white text-center font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-rl-blue text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-black collegiate-style">Club Rosters</h1>
+                <p class="mt-2 text-lg md:text-xl text-gray-300">Meet the 2024-2025 Royal Legends Teams</p>
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+
+                <!-- Team: 18U National -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden mb-16 fade-in">
+                    <div class="p-8">
+                        <h2 class="text-3xl font-black collegiate-style text-rl-blue">18U NATIONAL</h2>
+                        <p class="text-lg text-gray-600 mt-1">Head Coach: John Smith</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8 p-8 bg-gray-50">
+                        <!-- Roster List -->
+                        <div class="md:col-span-2">
+                            <h3 class="text-xl font-bold collegiate-style text-gray-700 mb-4">Player Roster</h3>
+                            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-lg">
+                                <li>#1 Emily Johnson</li>
+                                <li>#3 Jessica Williams</li>
+                                <li>#5 Ashley Brown</li>
+                                <li>#7 Sarah Jones</li>
+                                <li>#8 Madison Garcia</li>
+                                <li>#10 Olivia Miller</li>
+                                <li>#12 Abigail Davis</li>
+                                <li>#14 Isabella Rodriguez</li>
+                                <li>#15 Sophia Martinez</li>
+                                <li>#22 Chloe Hernandez</li>
+                            </ul>
+                        </div>
+                        <!-- Team Photo -->
+                        <div>
+                             <img src="https://placehold.co/600x400/0A2342/FFFFFF?text=18U+Team+Photo" alt="18U National Team" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team: 17U National -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden mb-16 fade-in" style="animation-delay: 0.2s;">
+                    <div class="p-8">
+                        <h2 class="text-3xl font-black collegiate-style text-rl-blue">17U NATIONAL</h2>
+                        <p class="text-lg text-gray-600 mt-1">Head Coach: Maria Hernandez</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8 p-8 bg-gray-50">
+                        <!-- Roster List -->
+                        <div class="md:col-span-2">
+                            <h3 class="text-xl font-bold collegiate-style text-gray-700 mb-4">Player Roster</h3>
+                            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-lg">
+                                <li>#2 Ava Smith</li>
+                                <li>#4 Mia Johnson</li>
+                                <li>#6 Evelyn Williams</li>
+                                <li>#9 Harper Brown</li>
+                                <li>#11 Amelia Jones</li>
+                                <li>#13 Ella Garcia</li>
+                                <li>#16 Charlotte Miller</li>
+                                <li>#18 Luna Davis</li>
+                                <li>#20 Riley Rodriguez</li>
+                                <li>#21 Grace Martinez</li>
+                            </ul>
+                        </div>
+                        <!-- Team Photo -->
+                        <div>
+                             <img src="https://placehold.co/600x400/0A2342/FFFFFF?text=17U+Team+Photo" alt="17U National Team" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team: 16U Regional -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden mb-16 fade-in" style="animation-delay: 0.4s;">
+                    <div class="p-8">
+                        <h2 class="text-3xl font-black collegiate-style text-rl-blue">16U REGIONAL</h2>
+                        <p class="text-lg text-gray-600 mt-1">Head Coach: David Wilson</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8 p-8 bg-gray-50">
+                        <!-- Roster List -->
+                        <div class="md:col-span-2">
+                            <h3 class="text-xl font-bold collegiate-style text-gray-700 mb-4">Player Roster</h3>
+                            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-lg">
+                                <li>#1 Lily Anderson</li>
+                                <li>#3 Zoe Thomas</li>
+                                <li>#5 Aria Jackson</li>
+                                <li>#7 Stella White</li>
+                                <li>#8 Aurora Harris</li>
+                                <li>#10 Nova Martin</li>
+                                <li>#12 Ellie Thompson</li>
+                                <li>#14 Hazel Moore</li>
+                                <li>#15 Violet Clark</li>
+                                <li>#22 Penelope Lewis</li>
+                             </ul>
+                        </div>
+                        <!-- Team Photo -->
+                        <div>
+                             <img src="https://placehold.co/600x400/0A2342/FFFFFF?text=16U+Team+Photo" alt="16U Regional Team" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more teams following the same structure -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-black collegiate-style">ROYAL LEGENDS VBC</h3>
+                    <p class="mt-2 text-gray-400">Building the next generation of leaders through volleyball.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Quick Links</h4>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="teams.html" class="text-gray-300 hover:text-rl-orange">Teams</a></li>
+                        <li><a href="tryouts.html" class="text-gray-300 hover:text-rl-orange">Tryouts</a></li>
+                        <li><a href="training.html" class="text-gray-300 hover:text-rl-orange">Training</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rl-orange">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Follow Us</h4>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Royal Legends VBC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
