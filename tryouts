@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Legends VBC - Tryouts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .collegiate-style {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Custom blue and orange colors */
+        :root {
+            --rl-blue: #0A2342;
+            --rl-orange: #FF8C00;
+        }
+        .bg-rl-blue { background-color: var(--rl-blue); }
+        .text-rl-blue { color: var(--rl-blue); }
+        .bg-rl-orange { background-color: var(--rl-orange); }
+        .hover\:bg-rl-orange-dark:hover { background-color: #e67e00; }
+        .text-rl-orange { color: var(--rl-orange); }
+        .hover\:text-rl-orange:hover { color: var(--rl-orange); }
+        .border-rl-blue { border-color: var(--rl-blue); }
+        .border-rl-orange { border-color: var(--rl-orange); }
+        
+        .table-header {
+            background-color: #f3f4f6; /* gray-100 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://placehold.co/200x60/0A2342/FFFFFF?text=ROYAL+LEGENDS" alt="Royal Legends VBC Logo" class="h-12 md:h-14" onerror="this.onerror=null;this.src='https://placehold.co/200x60?text=Logo';">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Home</a>
+                <a href="teams.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Teams</a>
+                <a href="tryouts.html" class="text-rl-blue font-semibold border-b-2 border-rl-blue">Tryouts</a>
+                <a href="training.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Training</a>
+                <a href="contact.html" class="text-gray-600 hover:text-rl-blue transition duration-300">Contact</a>
+            </div>
+            <a href="tryouts.html" class="hidden md:block bg-rl-orange text-white font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-rl-blue">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-rl-blue">Home</a>
+            <a href="teams.html" class="block py-2 text-gray-600 hover:text-rl-blue">Teams</a>
+            <a href="tryouts.html" class="block py-2 text-rl-blue font-semibold">Tryouts</a>
+            <a href="training.html" class="block py-2 text-gray-600 hover:text-rl-blue">Training</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-rl-blue">Contact</a>
+            <a href="tryouts.html" class="block mt-4 bg-rl-orange text-white text-center font-bold py-2 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 collegiate-style">
+                Join Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-rl-blue text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-black collegiate-style">Club Tryouts</h1>
+                <p class="mt-2 text-lg md:text-xl text-gray-300">Your journey to becoming a legend starts here. Find your age group and register today.</p>
+            </div>
+        </section>
+
+        <!-- Tryouts Information Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-4xl font-black collegiate-style text-rl-blue">2024-2025 Season Tryouts</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Below is the complete schedule for the upcoming club season tryouts. Please pre-register to secure your spot.</p>
+                </div>
+
+                <!-- Tryout Schedule Table -->
+                <div class="mt-12 bg-white rounded-lg shadow-xl overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-lg text-left">
+                            <thead class="collegiate-style text-rl-blue border-b-2 border-gray-200">
+                                <tr>
+                                    <th class="p-6">Age Group</th>
+                                    <th class="p-6">Date & Time</th>
+                                    <th class="p-6">Location</th>
+                                    <th class="p-6 text-center">Register</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 12U - 14U -->
+                                <tr class="border-b border-gray-200">
+                                    <td class="p-6 font-bold">12U - 14U</td>
+                                    <td class="p-6">
+                                        <p><strong>Day 1:</strong> Sunday, Oct 27th | 6:00 PM - 8:00 PM</p>
+                                        <p><strong>Day 2:</strong> Monday, Oct 28th | 6:00 PM - 8:00 PM</p>
+                                    </td>
+                                    <td class="p-6">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Competitive+Edge+Sports+320+S+Henderson+Rd+King+of+Prussia+PA+19406" target="_blank" class="inline-flex items-center group">
+                                            <span class="font-semibold text-gray-800 group-hover:text-rl-orange transition duration-300">Competitive Edge Sports</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-rl-blue group-hover:text-rl-orange transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <a href="#" class="bg-rl-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 text-sm collegiate-style">Register</a>
+                                    </td>
+                                </tr>
+                                <!-- 15U -->
+                                <tr class="border-b border-gray-200">
+                                    <td class="p-6 font-bold">15U</td>
+                                    <td class="p-6">
+                                        <p><strong>Day 1:</strong> Friday, Nov 1st | 6:00 PM - 8:00 PM</p>
+                                        <p><strong>Day 2:</strong> Sunday, Nov 3rd | 6:00 PM - 8:00 PM</p>
+                                    </td>
+                                    <td class="p-6">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Competitive+Edge+Sports+320+S+Henderson+Rd+King+of+Prussia+PA+19406" target="_blank" class="inline-flex items-center group">
+                                            <span class="font-semibold text-gray-800 group-hover:text-rl-orange transition duration-300">Competitive Edge Sports</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-rl-blue group-hover:text-rl-orange transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <a href="#" class="bg-rl-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 text-sm collegiate-style">Register</a>
+                                    </td>
+                                </tr>
+                                <!-- 16U -->
+                                <tr class="border-b border-gray-200">
+                                    <td class="p-6 font-bold">16U</td>
+                                    <td class="p-6">
+                                        <p><strong>Day 1:</strong> Friday, Nov 1st | 8:00 PM - 10:00 PM</p>
+                                        <p><strong>Day 2:</strong> Sunday, Nov 3rd | 8:00 PM - 10:00 PM</p>
+                                    </td>
+                                    <td class="p-6">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Competitive+Edge+Sports+320+S+Henderson+Rd+King+of+Prussia+PA+19406" target="_blank" class="inline-flex items-center group">
+                                            <span class="font-semibold text-gray-800 group-hover:text-rl-orange transition duration-300">Competitive Edge Sports</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-rl-blue group-hover:text-rl-orange transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <a href="#" class="bg-rl-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 text-sm collegiate-style">Register</a>
+                                    </td>
+                                </tr>
+                                <!-- 17U / 18U -->
+                                <tr>
+                                    <td class="p-6 font-bold">17U / 18U</td>
+                                    <td class="p-6">
+                                        <p><strong>Day 1:</strong> Sunday, Nov 10th | 6:00 PM - 8:00 PM</p>
+                                        <p><strong>Day 2:</strong> Monday, Nov 11th | 6:00 PM - 8:00 PM</p>
+                                    </td>
+                                    <td class="p-6">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Competitive+Edge+Sports+320+S+Henderson+Rd+King+of+Prussia+PA+19406" target="_blank" class="inline-flex items-center group">
+                                            <span class="font-semibold text-gray-800 group-hover:text-rl-orange transition duration-300">Competitive Edge Sports</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-rl-blue group-hover:text-rl-orange transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <a href="#" class="bg-rl-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-rl-orange-dark transition duration-300 text-sm collegiate-style">Register</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Additional Info Section -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+                <!-- What to Bring -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-black collegiate-style text-rl-blue mb-4">Tryout Checklist</h3>
+                    <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li>Printed registration confirmation.</li>
+                        <li>Copy of birth certificate.</li>
+                        <li>Appropriate volleyball attire (shoes, kneepads).</li>
+                        <li>Water bottle (clearly labeled).</li>
+                        <li>A positive, competitive attitude!</li>
+                    </ul>
+                </div>
+
+                <!-- Tryout Process -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-black collegiate-style text-rl-blue mb-4">The Process</h3>
+                    <p class="text-lg mb-4">Our tryouts are designed to evaluate players on a range of skills, including fundamentals, court awareness, and coachability. We are looking for athletes who are not only skilled but also demonstrate a strong work ethic, a willingness to learn, and the ability to be a great teammate.</p>
+                    <p class="text-lg">Offers may be extended at any point during the tryout window. We encourage athletes to attend both days of tryouts for their age group.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-black collegiate-style">ROYAL LEGENDS VBC</h3>
+                    <p class="mt-2 text-gray-400">Building the next generation of leaders through volleyball.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Quick Links</h4>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="teams.html" class="text-gray-300 hover:text-rl-orange">Teams</a></li>
+                        <li><a href="tryouts.html" class="text-gray-300 hover:text-rl-orange">Tryouts</a></li>
+                        <li><a href="training.html" class="text-gray-300 hover:text-rl-orange">Training</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rl-orange">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold collegiate-style">Follow Us</h4>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-rl-orange">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Royal Legends VBC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
